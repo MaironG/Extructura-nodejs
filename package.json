@@ -1,0 +1,26 @@
+{
+  "name": "extructura-de-un-proyecto",
+  "version": "1.0.0",
+  "description": "Extructua de nodejs y usando express",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaironG/Extructura-nodejs.git"
+  },
+  "author": "Mairon G.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaironG/Extructura-nodejs/issues"
+  },
+  "homepage": "https://github.com/MaironG/Extructura-nodejs#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4"
+  }
+}
