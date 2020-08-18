@@ -4,6 +4,7 @@ const path = require('path');
 const ejs =require('ejs');
 const mongoose = require('mongoose');
 const morgan =require('morgan');
+const bodyParser =require('body-parser') 
 
 
 //settings
