@@ -8,6 +8,5 @@ const userSchema = new Schema({                     //creando el esquema
     last_name: { type: String, match: /[a-z]/ },
     date: { type: Date, default: Date.now },
   });
-
-
+  
 module.exports= mongoose.model('user', userSchema);   //exportando el esquema y asignandole un nombre

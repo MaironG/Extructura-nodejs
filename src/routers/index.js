@@ -33,9 +33,12 @@ router.put('/user/:id', async (req, res) => {                     //aptualizar u
   
     
 router.delete('/user/:id', async (req, res) => {
-      var userDeleted = await user.findByIdAndDelete(req.params.id);
-      console.log(userDeleted);
+      if (req.params.id !=	req.body._id){
+        res.send('Usuario no encontrado');
+      } else{
+        await user.findByIdAndDelete(req.params.id);
       res.send('Usuario Eliminado');
+      }
     });
 
 

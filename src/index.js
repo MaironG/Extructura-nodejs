@@ -19,6 +19,7 @@ require('./database/dbConect');
 
 //router
 app.use(require('./routers/index'));
+app.use(require('./routers/usuarios'));
 
 
 //static file
