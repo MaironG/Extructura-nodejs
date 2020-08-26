@@ -21,6 +21,7 @@ app.set('view engine', 'ejs');                        //motor de plantilla
 //middleware 
 app.use(express.json());                            //para que el servidor entienda peticiones http
 app.use(morgan('dev'));
+//app.use(bodyParser.json())
 require('./database/dbConect');
 app.use(session({                                   //configuracion de express session
     secret: 'palabrasecreta',
@@ -33,7 +34,7 @@ app.use(passport.session());                            //para que passport util
 
 
 //router
-app.use(require('./routers/miembros'));
+app.use(require('./routers/miembrosR'));
 app.use(require('./routers/usuarios'));
 
 
